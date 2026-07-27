@@ -1,8 +1,32 @@
 aid: hotelurbano
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hotelurbano.png
 name: HotelUrbano
-description: HotelUrbano is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  HotelUrbano (later rebranded Hurb) was a Brazilian online travel agency
+  founded in January 2011 by Joao Ricardo Mendes and headquartered in Rio de
+  Janeiro, offering hotel bookings, flights, and flexible travel packages across
+  domestic and international destinations. Once one of Brazil's largest OTAs and
+  backed by investors including Insight Partners and Tiger Global, the company
+  collapsed amid consumer-protection complaints: the Brazilian Ministry of
+  Tourism revoked its Cadastur operating license on 14 April 2025 and the
+  company ceased all operations on 25 October 2025. Its consumer domains
+  (hotelurbano.com.br, hurb.com) no longer resolve and it publishes no public
+  API, developer portal, SDKs, or OpenAPI. The only surviving public technical
+  surface is its GitHub organization (hurbcom), which hosts engineering coding
+  challenges and open-source utility forks rather than product APIs. This
+  profile is retained as a historical/defunct-company record in the API
+  Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/hotelurbano/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +34,21 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-note: Ceased all operations 2025-10-25; Cadastur license revoked 2025-04-14; consumer domains no longer resolve.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Travel
+- Online Travel Agency
+- Hospitality
+- Hotels
+- Booking
+- Tourism
+- Brazil
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +58,10 @@ maintainers:
 common:
 - type: Website
   url: http://www.hotelurbano.com.br/
+- type: GitHubOrganization
+  url: https://github.com/hurbcom
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
